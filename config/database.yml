@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: line-bot_production
-  username: line-bot
-  password: <%= ENV['LINE-BOT_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
